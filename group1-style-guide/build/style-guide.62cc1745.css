@@ -72,6 +72,11 @@ xPatterns
 xNavigation
 
 -------------------------------- */
+/* --------------------------------
+
+xNavigation Style
+
+-------------------------------- */
 header {
   background-color: #CF5230; }
 
@@ -124,6 +129,19 @@ header {
     .cd-download span::before {
       /* right arrow color */
       border-color: #6E352C; }
+
+.cd-primary-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #8A6E64; }
+  .cd-primary-nav li a {
+    color: #F59A44;
+    border-color: #f6a75c;
+    font-weight: bold;
+    text-decoration: none; }
+    .cd-primary-nav li a:hover {
+      color: #facea5; }
+    .cd-primary-nav li a:active {
+      color: #ffffff; }
 
 /* --------------------------------
 
@@ -371,7 +389,13 @@ body {
   font-family: "Merriweather Sans", sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: underline;
+  color: #8A6E64; }
+  a:hover {
+    color: #F59A44; }
+  a:active {
+    color: #ffffff;
+    background-color: #8A6E64; }
 
 img {
   max-width: 100%; }

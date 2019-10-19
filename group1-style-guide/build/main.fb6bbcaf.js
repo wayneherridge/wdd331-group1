@@ -145,26 +145,33 @@ colorBoxes.forEach(function (element) {
 		buttons
   ********************/
 
-var buttonsWrapper = document.querySelector('#buttons .cd-box'),
-    buttonsHtml = buttonsWrapper.innerHTML;
-var containerHtml = document.createElement('div');
+/*
+const buttonsWrapper = document.querySelector('#buttons .cd-box'),
+  buttonsHtml = buttonsWrapper.innerHTML;
+const containerHtml = document.createElement('div');
 containerHtml.classList.add('cd-box');
 buttonsWrapper.parentNode.appendChild(containerHtml);
 buttonsHtmlText = buttonsHtml.split('</button>');
-buttonsHtmlText.map(function (value) {
+
+buttonsHtmlText.map(function(value) {
   if (value.indexOf('button') >= 0) {
-    var splitText = value.split('class="'),
-        block1 = splitText[0] + 'class="';
+    const splitText = value.split('class="'),
+      block1 = splitText[0] + 'class="';
     block2 = splitText[1].split('"');
-    var wrapperElement = document.createElement('p');
+
+    const wrapperElement = document.createElement('p');
     wrapperElement.appendChild(document.createTextNode(block1));
-    var spanElement = document.createElement('span');
+    const spanElement = document.createElement('span');
     spanElement.appendChild(document.createTextNode(block2[0]));
     wrapperElement.appendChild(spanElement);
     containerHtml.appendChild(wrapperElement);
-    wrapperElement.appendChild(document.createTextNode('"' + block2[1] + '</button>'));
+    wrapperElement.appendChild(
+      document.createTextNode('"' + block2[1] + '</button>')
+    );
   }
 });
+*/
+
 /*******************
 		typography
 	********************/
@@ -186,6 +193,11 @@ function setTypography(element, textElement) {
       fontFamily = cs.fontFamily.split(',')[0].replace(/\'/g, '').replace(/\"/g, ''),
       fontWeight = cs.fontWeight;
   textElement.innerText = fontWeight + ' ' + fontFamily + ' ' + fontSize;
+  console.log(element);
+  console.log(textElement);
+  console.log(fontWeight);
+  console.log(fontFamily);
+  console.log(fontSize);
 } //   /*******************
 // 		main  navigation
 // 	********************/
@@ -276,7 +288,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60550" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62023" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
