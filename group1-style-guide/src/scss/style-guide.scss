@@ -136,13 +136,6 @@ main>h1 {
     }
 }
 
-
-/* --------------------------------
-
-xTypography
-
--------------------------------- */
-
 @import 'partials/typography';
 
 /* --------------------------------
@@ -326,4 +319,4 @@ select {
     @include appearance(none);
 }
 
-@import 'partials/basic-style';
+@import 'partials/basic-style'
