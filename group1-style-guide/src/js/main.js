@@ -29,7 +29,7 @@ colorBoxes.forEach(function(element) {
 /*******************
 		buttons
   ********************/
-
+/*
 const buttonsWrapper = document.querySelector('#buttons .cd-box'),
   buttonsHtml = buttonsWrapper.innerHTML;
 const containerHtml = document.createElement('div');
@@ -54,7 +54,7 @@ buttonsHtmlText.map(function(value) {
     );
   }
 });
-
+*/
 /*******************
 		typography
 	********************/
@@ -79,6 +79,11 @@ function setTypography(element, textElement) {
       .replace(/\"/g, ''),
     fontWeight = cs.fontWeight;
   textElement.innerText = fontWeight + ' ' + fontFamily + ' ' + fontSize;
+  console.log(element);
+  console.log(textElement);
+  console.log(fontWeight);
+  console.log(fontFamily);
+  console.log(fontSize);
 }
 
 //   /*******************
