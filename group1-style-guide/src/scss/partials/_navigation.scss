@@ -74,3 +74,23 @@ header {
     }
   }
 }
+
+.cd-primary-nav {
+  /* main navigation background color - full screen on small devices */
+  background: $color-4;
+  li a {
+    color: $color-3;
+    border-color: lighten($color-3, 5%);
+    font-weight: bold;
+  }
+  @include MQ(M) {
+    li a {
+      &:hover {
+        color: lighten($color-3, 20%);
+      }
+      &:active {
+        color: $color-5;
+      }
+    }
+  }
+}

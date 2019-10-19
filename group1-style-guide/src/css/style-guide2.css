@@ -157,6 +157,24 @@ header {
   border-color: #6E352C;
 }
 
+.cd-primary-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #8A6E64;
+}
+.cd-primary-nav li a {
+  color: #F59A44;
+  border-color: #f6a75c;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1024px) {
+  .cd-primary-nav li a:hover {
+    color: #facea5;
+  }
+  .cd-primary-nav li a:active {
+    color: #ffffff;
+  }
+}
+
 /* --------------------------------
 
 xPage title
