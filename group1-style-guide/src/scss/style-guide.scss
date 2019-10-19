@@ -23,11 +23,7 @@ xBackground
 
 -------------------------------- */
 
-body {
-    /* this is the page background */
-    background-color: $color-5;
-}
-
+@import './partials/background.scss';
 
 /* --------------------------------
 
@@ -144,7 +140,7 @@ xTypography
 
 -------------------------------- */
 
-@import 'partials/typography';
+@import './partials/typography.scss';
 
 /* --------------------------------
 
