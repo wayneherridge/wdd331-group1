@@ -165,14 +165,13 @@ header {
   color: #F59A44;
   border-color: #f6a75c;
   font-weight: bold;
+  text-decoration: none;
 }
-@media only screen and (min-width: 1024px) {
-  .cd-primary-nav li a:hover {
-    color: #facea5;
-  }
-  .cd-primary-nav li a:active {
-    color: #ffffff;
-  }
+.cd-primary-nav li a:hover {
+  color: #facea5;
+}
+.cd-primary-nav li a:active {
+  color: #ffffff;
 }
 
 /* --------------------------------
@@ -472,7 +471,15 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #8A6E64;
+}
+a:hover {
+  color: #F59A44;
+}
+a:active {
+  color: #ffffff;
+  background-color: #8A6E64;
 }
 
 img {

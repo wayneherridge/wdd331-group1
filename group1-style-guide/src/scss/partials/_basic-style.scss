@@ -23,7 +23,16 @@ body {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
+
+	color: $color-4;
+	&:hover {
+		color: $color-3;
+	}
+	&:active {
+		color: $color-5;
+		background-color: $color-4;
+	}
 }
 
 img {
