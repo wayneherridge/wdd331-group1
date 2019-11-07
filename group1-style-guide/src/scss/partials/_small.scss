@@ -1,0 +1,33 @@
+.intro header , .summary {
+    text-align: center;}
+.summary p{
+    margin-top: 2rem;
+}
+footer {
+    text-align: center;
+    text-decoration: none;
+    background-color: lightgray;
+    border-top: solid black 2px;
+    padding-top: 5px;
+}
+.wrapper {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.design-selection{
+    grid-column: 1;
+
+}
+.design-archives, .zen-resources {
+    grid-column: 2;
+
+}
+.navigation ul {
+    list-style-type: none;
+    
+}
+.navigation a {
+    text-decoration: none;
+    
+}
