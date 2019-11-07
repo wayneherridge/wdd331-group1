@@ -8,32 +8,70 @@
 
 footer {
   text-align: center;
-  text-decoration: none;
   background-color: lightgray;
   border-top: solid black 2px;
+  border-right: solid black 2px;
+  border-left: solid black 2px;
   padding-top: 5px;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .wrapper {
   background-color: lightgray;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  border-right: solid black 2px;
+  border-left: solid black 2px;
+  border-bottom: solid black 2px;
+  grid-column-gap: 2%;
 }
 
 .design-selection {
   grid-column: 1;
+  grid-row: 1/span 2;
+  padding-left: 6px;
 }
 
-.design-archives, .zen-resources {
+.design-archives {
   grid-column: 2;
 }
 
-.navigation ul {
+.zen-resources {
+  grid-column: 2;
+}
+
+.zen-resources ul {
+  padding: 0;
+  margin: 0;
+}
+
+.zen-resources li {
   list-style-type: none;
 }
 
-.navigation a {
+.zen-resources li a {
   text-decoration: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+h3 {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
