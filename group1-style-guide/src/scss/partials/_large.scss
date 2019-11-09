@@ -1,7 +1,7 @@
-@media only screen and (max-width: 600px) {
+@/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
 
-  #zen-intro {
-      text-align: left;
-  }
-
-}
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
