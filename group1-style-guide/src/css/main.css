@@ -498,10 +498,6 @@ input, textarea, select {
 
 header {
   width: 100%;
-  top: 0;
-  left: 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  z-index: 10;
 }
 header nav {
   display: inline-block;
@@ -785,7 +781,6 @@ main > h1 {
 }
 
 section {
-  margin: 3em 0;
   /*	&:nth-of-type(1) h2::before {
   		content: '1. ';
   	}
@@ -828,19 +823,10 @@ section::after {
   content: "";
   display: block;
 }
-@media only screen and (min-width: 768px) {
-  section {
-    margin: 3em 0 5em;
-  }
-}
 @media only screen and (min-width: 1600px) {
   section {
     width: 48%;
     float: left;
-    margin: 0 4% 4em 0;
-  }
-  section:nth-of-type(2n) {
-    margin-right: 0;
   }
 }
 
@@ -1088,6 +1074,14 @@ section::after {
 
 .summary p {
   margin-top: 2rem;
+}
+
+.preamble, .main.supporting, .explanation, .participation, .benefits, .requirements {
+  margin-top: 2em;
+}
+
+.requirements {
+  margin-bottom: 2em;
 }
 
 footer {
