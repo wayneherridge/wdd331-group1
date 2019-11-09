@@ -59,7 +59,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #ffffff;
+  background-color: #6E352C;
 }
 
 /* --------------------------------
@@ -197,7 +197,12 @@ xTypography
 h1,
 h2 {
   font-family: "Catamaran", sans-serif;
-  color: #CF5230;
+  color: #ffffff;
+}
+
+h3 {
+  color: #F59A44;
+  font-weight: bold;
 }
 
 h1 {
@@ -240,7 +245,7 @@ p {
   color: #e7a998;
 }
 p a {
-  color: #6E352C;
+  color: #d8cdc9;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -492,8 +497,6 @@ input, textarea, select {
 }
 
 header {
-  position: fixed;
-  height: 50px;
   width: 100%;
   top: 0;
   left: 0;
@@ -504,9 +507,6 @@ header nav {
   display: inline-block;
 }
 @media only screen and (min-width: 1024px) {
-  header {
-    height: 80px;
-  }
   header::after {
     clear: both;
     content: "";
@@ -786,41 +786,47 @@ main > h1 {
 
 section {
   margin: 3em 0;
+  /*	&:nth-of-type(1) h2::before {
+  		content: '1. ';
+  	}
+
+  	&:nth-of-type(2) h2::before {
+  		content: '2. ';
+  	}
+
+  	&:nth-of-type(3) h2::before {
+  		content: '3. ';
+  	}
+
+  	&:nth-of-type(4) h2::before {
+  		content: '4. ';
+  	}
+
+  	&:nth-of-type(5) h2::before {
+  		content: '5. ';
+  	}
+
+  	&:nth-of-type(6) h2::before {
+  		content: '6. ';
+  	}
+
+      &:nth-of-type(7) h2::before {
+  		content: '7. ';
+  	}
+        &:nth-of-type(8) h2::before {
+  		content: '8. ';
+  	}
+        &:nth-of-type(9) h2::before {
+  		content: '9. ';
+  	}
+      &:nth-of-type(10) h2::before {
+  		content: '10. ';
+  	}*/
 }
 section::after {
   clear: both;
   content: "";
   display: block;
-}
-section:nth-of-type(1) h2::before {
-  content: "1. ";
-}
-section:nth-of-type(2) h2::before {
-  content: "2. ";
-}
-section:nth-of-type(3) h2::before {
-  content: "3. ";
-}
-section:nth-of-type(4) h2::before {
-  content: "4. ";
-}
-section:nth-of-type(5) h2::before {
-  content: "5. ";
-}
-section:nth-of-type(6) h2::before {
-  content: "6. ";
-}
-section:nth-of-type(7) h2::before {
-  content: "7. ";
-}
-section:nth-of-type(8) h2::before {
-  content: "8. ";
-}
-section:nth-of-type(9) h2::before {
-  content: "9. ";
-}
-section:nth-of-type(10) h2::before {
-  content: "10. ";
 }
 @media only screen and (min-width: 768px) {
   section {

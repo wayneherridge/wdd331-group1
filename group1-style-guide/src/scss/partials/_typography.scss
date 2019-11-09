@@ -1,7 +1,12 @@
 h1,
 h2 {
     font-family: $secondary-font;
-    color: $color-2;
+    color: $color-5;
+}
+
+h3 {
+    color: $color-3;
+    font-weight: bold;
 }
 
 h1 {
@@ -37,7 +42,7 @@ p {
     line-height: 1.4;
     color: lighten($color-2, 25%);
     a {
-        color: $color-1;
+        color: lighten($color-4, 35%);
         text-decoration: underline;
     }
     @include MQ(S) {
