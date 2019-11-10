@@ -9,8 +9,12 @@
       display: grid;
     }
 
-    .preamble .explanation {
-      column-count: 2;
+    .preamble {
+      grid-column: 1/2;
+    }
+
+    .explanation {
+      grid-column: 3/4;
     }
 
 }
