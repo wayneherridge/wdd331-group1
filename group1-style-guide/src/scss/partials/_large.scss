@@ -7,16 +7,16 @@
 
     .page-wrapper {
       display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "preamble preamble explanation explanation"
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "preamble preamble explanation explanation"
   "participation participation participation benefits"
   "requirements requirements requirements requirements";
     }
 
-    .banner {
-      display: inline-block;
-      span: 4;
+    .intro {
+      grid-column: 1 / span 4;
     }
 
     .preamble {
@@ -37,6 +37,10 @@
 
     .requirements {
       grid-area: requirements;
+    }
+
+    footer {
+      grid-column: 1 / span 4;
     }
 
 
