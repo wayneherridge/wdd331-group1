@@ -7,14 +7,31 @@
 
     .page-wrapper {
       display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "preamble preamble explanation explanation" "participation participation participation benefits";
+    }
+
+    .banner {
+      display: inline-block;
     }
 
     .preamble {
-      grid-column: 1/2;
+      grid-area: preamble;
     }
 
     .explanation {
-      grid-column: 3/4;
+      grid-area: explanation;
     }
+
+    .participation {
+      grid-area: participation;
+    }
+
+    .benefits {
+      grid-area: benefits;
+    }
+
+
 
 }
