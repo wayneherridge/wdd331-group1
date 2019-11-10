@@ -813,11 +813,6 @@ section {
   		content: '10. ';
   	}*/
 }
-section::after {
-  clear: both;
-  content: "";
-  display: block;
-}
 /* xBranding section - basic style */
 .cd-branding .cd-box {
   margin-bottom: 1em;
@@ -1142,7 +1137,7 @@ footer a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 800px) {
   #css-zen-garden {
     max-width: 64rem;
     margin: auto;
@@ -1150,37 +1145,46 @@ footer a {
 
   .page-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "preamble preamble explanation explanation" "participation participation participation benefits" "requirements requirements requirements requirements";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
   }
 
   .intro {
-    grid-column: 1/span 4;
+    grid-area: 1/1/4/7;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .intro header {
+    grid-area: 1/1/2/7;
+  }
+  .intro .summary {
+    grid-area: 2/1/3/7;
+  }
+  .intro .preamble {
+    grid-area: 3/1/4/4;
   }
 
-  .preamble {
-    grid-area: preamble;
+  .main.supporting {
+    grid-area: 4/1/8/7;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
-
-  .explanation {
-    grid-area: explanation;
+  .main.supporting .explanation {
+    grid-area: 1/4/2/7;
   }
-
-  .participation {
-    grid-area: participation;
+  .main.supporting .participation {
+    grid-area: 2/1/3/5;
   }
-
-  .benefits {
-    grid-area: benefits;
+  .main.supporting .benefits {
+    grid-area: 2/5/3/7;
   }
-
-  .requirements {
-    grid-area: requirements;
+  .main.supporting .requirements {
+    grid-area: 3/1/4/7;
   }
-
-  footer {
-    grid-column: 1/span 4;
+  .main.supporting footer {
+    grid-area: 4/1/5/7;
   }
 }
 
