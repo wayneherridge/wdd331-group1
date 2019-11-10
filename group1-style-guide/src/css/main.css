@@ -1144,9 +1144,13 @@ footer a {
 
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  #css-zen-garden {
     max-width: 64rem;
     margin: auto;
+  }
+
+  footer {
+    background-color: red;
   }
 }
 
