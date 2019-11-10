@@ -1157,6 +1157,7 @@ footer a {
 
   .banner {
     display: inline-block;
+    span: 4;
   }
 
   .preamble {
