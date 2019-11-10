@@ -780,8 +780,8 @@ main > h1 {
   }
 }
 
-section {
-  /*	&:nth-of-type(1) h2::before {
+/* section {
+	&:nth-of-type(1) h2::before {
   		content: '1. ';
   	}
 
@@ -816,8 +816,8 @@ section {
   	}
       &:nth-of-type(10) h2::before {
   		content: '10. ';
-  	}*/
-}
+  	}
+}*/
 section::after {
   clear: both;
   content: "";
