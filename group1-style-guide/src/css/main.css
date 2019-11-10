@@ -1152,7 +1152,7 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "preamble preamble explanation explanation" "participation participation participation benefits";
+    grid-template-areas: "preamble preamble explanation explanation" "participation participation participation benefits" "requirements requirements requirements requirements";
   }
 
   .banner {
@@ -1173,6 +1173,10 @@ footer a {
 
   .benefits {
     grid-area: benefits;
+  }
+
+  .requirements {
+    grid-area: requirements;
   }
 }
 
