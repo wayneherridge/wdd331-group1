@@ -1151,12 +1151,12 @@ footer a {
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "preamble preamble explanation explanation" "participation participation participation benefits" "requirements requirements requirements requirements";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "intro intro intro intro" "preamble preamble explanation explanation" "participation participation participation benefits" "requirements requirements requirements requirements" "footer footer footer footer";
   }
 
   .intro {
-    grid-column: 1/span 4;
+    grid-area: intro;
   }
 
   .preamble {
@@ -1180,7 +1180,7 @@ footer a {
   }
 
   footer {
-    grid-column: 1/span 4;
+    grid-area: footer;
   }
 }
 

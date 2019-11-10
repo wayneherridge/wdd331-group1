@@ -8,41 +8,22 @@
     .page-wrapper {
       display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-  "preamble preamble explanation explanation"
-  "participation participation participation benefits"
-  "requirements requirements requirements requirements";
-    }
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "intro intro intro intro" "preamble preamble explanation explanation" "participation participation participation benefits" "requirements requirements requirements requirements" "footer footer footer footer";
+}
 
-    .intro {
-      grid-column: 1 / span 4;
-    }
+.intro { grid-area: intro; }
 
-    .preamble {
-      grid-area: preamble;
-    }
+.preamble { grid-area: preamble; }
 
-    .explanation {
-      grid-area: explanation;
-    }
+.explanation { grid-area: explanation; }
 
-    .participation {
-      grid-area: participation;
-    }
+.participation { grid-area: participation; }
 
-    .benefits {
-      grid-area: benefits;
-    }
+.benefits { grid-area: benefits; }
 
-    .requirements {
-      grid-area: requirements;
-    }
+.requirements { grid-area: requirements; }
 
-    footer {
-      grid-column: 1 / span 4;
-    }
-
-
+footer { grid-area: footer; }
 
 }
