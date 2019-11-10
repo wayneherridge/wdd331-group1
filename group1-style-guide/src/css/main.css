@@ -450,7 +450,7 @@ select {
   appearance: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 xBasic style
 
@@ -1142,9 +1142,9 @@ footer a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 80rem) {
   #css-zen-garden {
-    max-width: 64rem;
+    max-width: 80rem;
     margin: auto;
   }
 }
