@@ -757,11 +757,6 @@ main > h1 {
   text-align: center;
   margin: 3em 0;
 }
-@media only screen and (min-width: 1024px) {
-  main {
-    padding-top: 80px;
-  }
-}
 @media only screen and (min-width: 1600px) {
   main {
     max-width: none;
@@ -823,13 +818,6 @@ section::after {
   content: "";
   display: block;
 }
-@media only screen and (min-width: 1600px) {
-  section {
-    width: 48%;
-    float: left;
-  }
-}
-
 /* xBranding section - basic style */
 .cd-branding .cd-box {
   margin-bottom: 1em;
@@ -867,8 +855,6 @@ section::after {
 }
 @media only screen and (min-width: 768px) {
   .cd-branding .cd-box {
-    width: 49%;
-    float: left;
     margin: 0 2% 2em 0;
   }
   .cd-branding .cd-box:nth-of-type(2n) {
@@ -885,8 +871,6 @@ section::after {
 /* xColor section - basic style */
 .cd-colors li {
   text-align: center;
-  width: 48%;
-  float: left;
   margin: 0 4% 1em 0;
 }
 .cd-colors li:nth-of-type(2n) {
@@ -962,8 +946,6 @@ section::after {
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
-    width: 19%;
-    float: left;
     margin: 0 1.25% 1em 0;
   }
   .cd-colors li:nth-of-type(2n) {
@@ -1160,9 +1142,11 @@ footer a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  #zen-intro {
-    text-align: left;
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin: auto;
   }
 }
 
