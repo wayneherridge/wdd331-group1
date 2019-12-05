@@ -1049,6 +1049,10 @@ section {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 .summary p {
   margin-top: 2rem;
   margin-left: 100px;
@@ -1085,18 +1089,6 @@ footer a {
   grid-column: 1;
   grid-row: 1/span 2;
   padding-left: 6px;
-}
-
-.design-archives {
-  grid-column: 2;
-}
-
-.summary p {
-  color: red;
-}
-
-.zen-resources {
-  grid-column: 2;
 }
 
 .zen-resources ul {
