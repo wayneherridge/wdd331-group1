@@ -1051,7 +1051,7 @@ section {
 
 .summary p {
   margin-top: 2rem;
-  padding-left: 100px;
+  margin-left: 100px;
 }
 
 .preamble, .main.supporting, .explanation, .participation, .benefits, .requirements {
@@ -1089,6 +1089,10 @@ footer a {
 
 .design-archives {
   grid-column: 2;
+}
+
+.summary p {
+  color: red;
 }
 
 .zen-resources {
