@@ -1,24 +1,8 @@
-// *** start original _style-guide.scss
 @import 'partials/prefix-mixins'; //*** NEED TO REVIEW
 @import 'partials/layout'; //*** NEED TO REVIEW
-@import 'partials/colors';
-@import 'partials/fonts';
+@import 'partials/variables';
 @import 'partials/background';
-
-
-/* --------------------------------
-
-xTypography
-
--------------------------------- */
-
 @import './partials/typography.scss'; //*** NEED TO REVIEW
-
-
 @import 'partials/basic-style'; //*** NEED TO REVIEW
-// *** end original _style-guide.scss
-
-
-
 @import 'partials/small';
 @import 'partials/large';
