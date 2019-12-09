@@ -32,11 +32,6 @@ h2 {
     }
 }
 
-section>h2::before {
-    /* number before each section title */
-    color: darken($color-4, 15%);
-}
-
 p {
     font-size: 1.4rem;
     line-height: 1.4;
