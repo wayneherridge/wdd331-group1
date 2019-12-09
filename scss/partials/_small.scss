@@ -1,0 +1,88 @@
+.intro header , .summary {
+    text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.summary p {
+    margin-top: 2rem;
+    margin-left: 100px;
+}
+
+.preamble, .main.supporting, .explanation, .participation, .benefits, .requirements  {
+    margin-top: 2em;
+}
+
+.requirements {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.wrapper {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+    grid-column-gap: 2%;
+}
+
+.design-selection {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding-left: 6px;
+}
+
+.zen-resources ul {
+    padding: 0;
+    margin: 0;
+}
+
+.zen-resources li {
+    list-style-type: none;
+}
+
+.zen-resources li a {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+    padding-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}

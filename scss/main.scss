@@ -1,0 +1,92 @@
+// *** original _style-guide.scss
+@import 'partials/reset'; //*** NEED TO REVIEW
+@import 'partials/prefix-mixins'; //*** NEED TO REVIEW
+@import 'partials/layout'; //*** NEED TO REVIEW
+@import 'partials/colors'; //*** NEED TO REVIEW
+@import 'partials/fonts';
+
+
+/* --------------------------------
+
+xBackground
+
+-------------------------------- */
+
+@import './partials/background.scss'; //*** NEED TO REVIEW
+
+/* --------------------------------
+
+xPatterns
+
+-------------------------------- */
+
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid $color-4;
+  border-radius: 3px;
+  background: $color-5;
+  box-shadow: 0 1px 1px rgba(#000, 0.05);
+  padding: 6px;
+}
+
+
+/* --------------------------------
+
+xNavigation
+
+-------------------------------- */
+
+@import 'partials/navigation'; //*** NEED TO REVIEW
+
+/* --------------------------------
+
+xPage title
+
+-------------------------------- */
+
+main>h1 {
+  color: $color-2;
+  @include MQ(L) {
+    /* title goes into the header on big devices */
+    color: $color-5;
+  }
+}
+
+
+/* --------------------------------
+
+xTypography
+
+-------------------------------- */
+
+@import './partials/typography.scss'; //*** NEED TO REVIEW
+
+/* --------------------------------
+
+xButtons
+
+-------------------------------- */
+
+@import './partials/_buttons.scss'; //*** NEED TO REVIEW
+
+/* --------------------------------
+
+xIcons
+
+-------------------------------- */
+
+@import 'partials/icons'; //*** NEED TO REVIEW
+
+/* --------------------------------
+
+xForm
+
+-------------------------------- */
+
+@import 'partials/form'; //*** NEED TO REVIEW
+@import 'partials/basic-style'; //*** NEED TO REVIEW
+
+
+
+@import 'partials/small';
+@import 'partials/large';
