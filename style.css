@@ -2,11 +2,6 @@ body {
   background-color: #6E352C;
 }
 
-/* --------------------------------
-
-xTypography
-
--------------------------------- */
 h1,
 h2 {
   font-family: "Catamaran", sans-serif;
@@ -64,7 +59,7 @@ p a {
 }
 
 /* -------------------------------- 
-	BASIC STYLE
+	BASIC STYLE PARTIAL
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
