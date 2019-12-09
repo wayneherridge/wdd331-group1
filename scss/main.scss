@@ -13,21 +13,6 @@ xBackground
 
 @import './partials/background.scss'; //*** NEED TO REVIEW
 
-/* --------------------------------
-
-xPatterns
-
--------------------------------- */
-
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid $color-4;
-  border-radius: 3px;
-  background: $color-5;
-  box-shadow: 0 1px 1px rgba(#000, 0.05);
-  padding: 6px;
-}
-
 
 /* --------------------------------
 
@@ -36,21 +21,6 @@ xNavigation
 -------------------------------- */
 
 @import 'partials/navigation'; //*** NEED TO REVIEW
-
-/* --------------------------------
-
-xPage title
-
--------------------------------- */
-
-main>h1 {
-  color: $color-2;
-  @include MQ(L) {
-    /* title goes into the header on big devices */
-    color: $color-5;
-  }
-}
-
 
 /* --------------------------------
 
