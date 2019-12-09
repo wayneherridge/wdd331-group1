@@ -1,5 +1,26 @@
 /* -------------------------------- 
 	BASIC STYLE
+
+List of Block Tags in index.html:
+body
+div
+header
+section
+footer
+aside
+h1
+h2
+h3
+p
+ol
+ul
+li
+nav
+
+
+List of Non-Block Tags in index.html:
+a
+abbr
 -------------------------------- */
 
 *, *::after, *::before {
@@ -18,6 +39,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: $primary-font;
+	line-height: 1;
 }
 
 a {
@@ -53,6 +75,10 @@ header {
 	@include MQ(M) {
 		@include clearfix;
 	}
+}
+
+ol, ul {
+	list-style: none;
 }
 
 .cd-logo {
