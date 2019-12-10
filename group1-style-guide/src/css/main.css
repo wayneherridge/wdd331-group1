@@ -1002,7 +1002,7 @@ footer {
 
 footer a {
   text-decoration: none; }
-
+/*
 @media only screen and (min-width: 800px) {
   #css-zen-garden {
     max-width: 64rem;
@@ -1092,3 +1092,4 @@ footer a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: 8 / 1 / 9 / 7; } }
+*/

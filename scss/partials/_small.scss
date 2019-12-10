@@ -6,6 +6,16 @@ h3 {
   text-align: center;
 }
 
+h3::before {
+    content: '';
+    display:inline-block;
+    height: 22px;
+    width: 22px;
+    background: url(../img/leaf.png) center no-repeat;
+    background-size: 22px 22px;
+    transform: rotate(-45deg) translateY(5px);
+}
+
 .summary p {
     margin-top: 2rem;
     margin-left: 100px;
