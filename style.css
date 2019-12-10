@@ -1,5 +1,12 @@
 body {
   background-color: #6E352C;
+  padding: 10px;
+}
+
+html {
+  padding: 30px;
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */;
 }
 
 h1,
@@ -58,7 +65,7 @@ p a {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 	BASIC STYLE PARTIAL
 -------------------------------- */
 *, *::after, *::before {
