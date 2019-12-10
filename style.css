@@ -4,7 +4,8 @@ body {
 }
 
 html {
-  padding: 30px;
+  background-color: white;
+  padding: 40px;
   opacity: 0.9;
   filter: alpha(opacity=90); /* For IE8 and earlier */;
 }
