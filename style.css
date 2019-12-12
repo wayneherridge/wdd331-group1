@@ -29,7 +29,7 @@ h3 {
   100% {transform: rotate(-45deg) translateY(5px);}
 }
 
-h3::before, h3::after {
+.preamble h3::before,.explanation h3::before,.participation h3::before,.benefits h3::before,.requirements h3::before, .preamble h3::after,.explanation h3::after,.participation h3::after,.benefits h3::after,.requirements h3::after {
   content: '';
   display:inline-block;
   margin-right: 1%;
