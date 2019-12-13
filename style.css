@@ -1,3 +1,20 @@
+/* --------------------------------
+	KEYFRAMES PARTIAL
+-------------------------------- */
+@keyframes leaf {
+  0% {
+    transform: rotate(-45deg) translateY(5px);
+  }
+  60% {
+    transform: rotate(-70deg) translateY(0px);
+  }
+  80% {
+    transform: rotate(25deg) translateY(5px);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(5px);
+  }
+}
 body {
   background-color: #6E352C;
   padding: 10px;
@@ -8,7 +25,8 @@ html {
   background-image: url(https://previews.123rf.com/images/tiero/tiero0806/tiero080600055/3145150-wheat-harvest-field-background.jpg);
   padding: 40px;
   opacity: 0.9;
-  filter: alpha(opacity=90); /* For IE8 and earlier */;
+  filter: alpha(opacity=90);
+  /* For IE8 and earlier */
 }
 
 h1,
@@ -20,26 +38,6 @@ h2 {
 h3 {
   color: #F59A44;
   font-weight: bold;
-}
-
-@keyframes leaf {
-  0% {transform: rotate(-45deg) translateY(5px);}
-  60% {transform: rotate(-70deg) translateY(0px);}
-  80% {transform: rotate(25deg) translateY(5px);}
-  100% {transform: rotate(-45deg) translateY(5px);}
-}
-
-.preamble h3::before,.explanation h3::before,.participation h3::before,.benefits h3::before,.requirements h3::before, .preamble h3::after,.explanation h3::after,.participation h3::after,.benefits h3::after,.requirements h3::after {
-  content: '';
-  display:inline-block;
-  margin-right: 1%;
-  height: 30px;
-  width: 30px;
-  background: url(img/leaf.svg) center no-repeat;
-  background-size: 22px 22px;
-  transition: all 1s ease-in-out;
-  transform: rotate(-45deg) translateY(5px);
-  animation: leaf 2s linear infinite;
 }
 
 h1 {
@@ -75,7 +73,6 @@ p {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #e7a998;
-
 }
 p a {
   color: #d8cdc9;
@@ -88,7 +85,7 @@ p a {
   }
 }
 
-/* --------------------------------
+/* -------------------------------- 
 	BASIC STYLE PARTIAL
 -------------------------------- */
 *, *::after, *::before {
@@ -174,6 +171,19 @@ main > h1 {
   }
 }
 
+.preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
+  content: "";
+  display: inline-block;
+  margin-right: 1%;
+  height: 30px;
+  width: 30px;
+  background: url(img/leaf.svg) center no-repeat;
+  background-size: 22px 22px;
+  transition: all 1s ease-in-out;
+  transform: rotate(-45deg) translateY(5px);
+  animation: leaf 2s linear infinite;
+}
+
 .intro header, .summary {
   text-align: center;
 }
@@ -187,7 +197,7 @@ h3 {
 }
 
 .preamble, .main.supporting, .explanation, .participation, .benefits, .requirements {
-  margin-top: .5em;
+  margin-top: 0.5em;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -268,7 +278,6 @@ footer a {
   #css-zen-garden {
     max-width: 64rem;
     margin: auto;
-
   }
 
   .page-wrapper {

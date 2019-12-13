@@ -1,3 +1,13 @@
 body {
     background-color: $color-1;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+html {
+    background-image: url(https://previews.123rf.com/images/tiero/tiero0806/tiero080600055/3145150-wheat-harvest-field-background.jpg);
+    padding: 40px;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */;
+}
+
