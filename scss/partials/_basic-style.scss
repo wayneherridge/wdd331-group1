@@ -3,7 +3,10 @@
 -------------------------------- */
 
 *, *::after, *::before {
+	box-sizing: border-box;
+	/*
 	@include box-sizing(border-box);
+	*/
 }
 
 html * {
@@ -51,7 +54,7 @@ header {
 	}
 
 	@include MQ(M) {
-		@include clearfix;
+		// @include clearfix;
 	}
 }
 

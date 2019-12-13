@@ -89,9 +89,10 @@ p a {
 	BASIC STYLE PARTIAL
 -------------------------------- */
 *, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  /*
+  @include box-sizing(border-box);
+  */
 }
 
 html * {
@@ -135,14 +136,6 @@ header {
 header nav {
   display: inline-block;
 }
-@media only screen and (min-width: 1024px) {
-  header::after {
-    clear: both;
-    content: "";
-    display: block;
-  }
-}
-
 main {
   width: 90%;
   max-width: 1024px;
