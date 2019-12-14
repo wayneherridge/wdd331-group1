@@ -15,6 +15,9 @@
     transform: rotate(-45deg) translateY(5px);
   }
 }
+/* --------------------------------
+	BACKGROUND PARTIAL
+-------------------------------- */
 body {
   background-color: #6E352C;
   padding: 10px;
@@ -29,6 +32,9 @@ html {
   /* For IE8 and earlier */
 }
 
+/* --------------------------------
+	TYPOGRAPHY PARTIAL
+-------------------------------- */
 h1,
 h2 {
   font-family: "Catamaran", sans-serif;
@@ -90,9 +96,6 @@ p a {
 -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box;
-  /*
-  @include box-sizing(border-box);
-  */
 }
 
 html * {
@@ -136,34 +139,10 @@ header {
 header nav {
   display: inline-block;
 }
-main {
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-main > h1 {
-  text-align: center;
-  margin: 3em 0;
-}
-@media only screen and (min-width: 1600px) {
-  main {
-    max-width: none;
-    padding: 120px 0 50px;
-  }
-  main > h1 {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    height: 80px;
-    line-height: 80px;
-    width: 400px;
-    margin: 0 0 0 -200px;
-    font-size: 2.6rem;
-    z-index: 20;
-  }
-}
 
+/* --------------------------------
+	SMALL PARTIAL
+-------------------------------- */
 .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
   content: "";
   display: inline-block;
@@ -267,6 +246,9 @@ footer a {
   text-decoration: none;
 }
 
+/* --------------------------------
+	LARGE PARTIAL
+-------------------------------- */
 @media only screen and (min-width: 800px) {
   #css-zen-garden {
     max-width: 64rem;
