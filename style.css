@@ -36,11 +36,13 @@ html {
 	TYPOGRAPHY PARTIAL
 -------------------------------- */
 html {
-  font-size: 62.5%;
+  /*
+  font-size: 65%;
+  */
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -50,48 +52,30 @@ h2 {
   color: #ffffff;
 }
 
-h3 {
-  color: #F59A44;
-  font-weight: bold;
-}
-
 h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 0.4em;
-  /*
-  @include MQ(S) {
-      font-size: 3.2rem;
-  }
-  @include MQ(M) {
-      font-size: 4rem;
-  }
-  */
 }
 
 h2 {
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   margin: 1em 0;
-  /*
-  @include MQ(S) {
-      font-size: 1.8rem;
-      margin: 1em 0 1.4em;
-  }
-  */
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #F59A44;
+  font-weight: bold;
 }
 
 p {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #e7a998;
-  /*
-  @include MQ(S) {
-      font-size: 1.6rem;
-      line-height: 1.6;
-  }
-  */
 }
 p a {
   color: #d8cdc9;
@@ -110,9 +94,17 @@ a:active {
   background-color: #8A6E64;
 }
 
-/* -------------------------------- 
-	BASIC STYLE PARTIAL
--------------------------------- */
+footer, aside {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+footer a, aside a {
+  color: #6c564f;
+}
+footer h3, aside h3 {
+  color: #f28014;
+}
+
 /* --------------------------------
 	SMALL PARTIAL
 -------------------------------- */
@@ -226,7 +218,7 @@ footer a {
 /* --------------------------------
 	LARGE PARTIAL
 -------------------------------- */
-@media only screen and (min-width: 800px) {
+@media (min-width: 800px) {
   #css-zen-garden {
     max-width: 64rem;
     margin: auto;

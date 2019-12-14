@@ -4,6 +4,6 @@ $largeScreen: 800px;
 // Media Query Mixin
 @mixin mediaQuery($screenSize) {
   @if $screenSize == large {
-    @media only screen and (min-width: $largeScreen) { @content; }
+    @media (min-width: $largeScreen) { @content; }
   }
 }
