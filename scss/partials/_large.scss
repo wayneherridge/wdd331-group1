@@ -2,7 +2,7 @@
 	LARGE PARTIAL
 -------------------------------- */
 
-@media only screen and (min-width: 800px) {
+@include mediaQuery(large) {
   #css-zen-garden {
     max-width: 64rem;
     margin: auto;
