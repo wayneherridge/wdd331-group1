@@ -108,6 +108,10 @@ footer h3, aside h3 {
 /* --------------------------------
 	SMALL PARTIAL
 -------------------------------- */
+body {
+  min-width: 400px;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -158,18 +162,26 @@ footer a {
 .wrapper {
   background-color: lightgray;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 15px 1.5fr 1fr 15px;
+  grid-template-rows: auto auto 25px;
   border-right: solid black 2px;
   border-left: solid black 2px;
   border-bottom: solid black 2px;
   grid-column-gap: 2%;
+  grid-row-gap: 2%;
 }
 
 .design-selection {
-  grid-column: 1;
-  grid-row: 1/span 2;
+  grid-area: 1/2/3/3;
   padding-left: 6px;
+}
+
+.design-archives {
+  grid-area: 1/3/2/4;
+}
+
+.zen-resources {
+  grid-area: 2/3/3/4;
 }
 
 .zen-resources ul {
