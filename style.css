@@ -35,6 +35,15 @@ html {
 /* --------------------------------
 	TYPOGRAPHY PARTIAL
 -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
 h1,
 h2 {
   font-family: "Catamaran", sans-serif;
@@ -89,27 +98,6 @@ p a {
   text-decoration: underline;
 }
 
-/* -------------------------------- 
-	BASIC STYLE PARTIAL
--------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Merriweather Sans", sans-serif;
-}
-
 a {
   text-decoration: underline;
   color: #8A6E64;
@@ -122,17 +110,16 @@ a:active {
   background-color: #8A6E64;
 }
 
-img {
-  max-width: 100%;
-}
-
-header {
-  width: 100%;
-}
-
+/* -------------------------------- 
+	BASIC STYLE PARTIAL
+-------------------------------- */
 /* --------------------------------
 	SMALL PARTIAL
 -------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
   content: "";
   display: inline-block;

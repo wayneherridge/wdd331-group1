@@ -2,6 +2,15 @@
 	TYPOGRAPHY PARTIAL
 -------------------------------- */
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: $primary-font;
+}
+
 h1,
 h2 {
     font-family: $secondary-font;
@@ -55,3 +64,17 @@ p {
     }
     */
 }
+
+a {
+    text-decoration: underline;
+
+    color: $color-4;
+    &:hover {
+        color: $color-3;
+    }
+    &:active {
+        color: $color-5;
+        background-color: $color-4;
+    }
+}
+
